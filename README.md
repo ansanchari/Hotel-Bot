@@ -60,7 +60,7 @@ MISTRAL_API_KEY=your_mistral_api_key_here
 
 ```
 
-## 💻 Run Commands
+## Run Commands
 
 **1. Generate the FAISS Database (Data Ingestion)**
 Run this to embed the knowledge base and generate the `faiss_index.bin` file.
