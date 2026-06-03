@@ -22,10 +22,6 @@ with open(os.path.join("data", "chunk_mapping.json"), "r", encoding="utf-8") as 
 chat_history = []
 
 def classify_intent(query):
-    """
-    Categorizes the user's input across English, Hindi, and Hinglish.
-    Implements a Hybrid Router: Tries LLM first, falls back to local NLP if rate-limited.
-    """
     if query.startswith("#") or any(word in query.lower() for word in ["human", "agent", "staff"]):
         return "staff_command"
 

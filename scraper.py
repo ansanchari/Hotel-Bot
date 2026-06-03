@@ -5,9 +5,6 @@ import requests
 from bs4 import BeautifulSoup
 
 def scrape_hotel_page(url, category_name):
-    """
-    Fetches a single webpage and extracts clean text from content-bearing HTML tags.
-    """
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
@@ -16,7 +13,6 @@ def scrape_hotel_page(url, category_name):
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        # Raise an exception for HTTP errors (e.g., 404, 500, 403)
         response.raise_for_status() 
     except requests.exceptions.RequestException as e:
         print(f"ERROR: Failed to fetch {url}. Reason: {e}")
