@@ -44,8 +44,8 @@ def run_evaluation():
             
         except Exception as e:
             print("\n      [RAW ERROR DATA]:")
-            print(f"      {repr(e)}") # This forces the hidden error to print
-            traceback.print_exc()     # This shows exactly which line broke
+            print(f"      {repr(e)}")
+            traceback.print_exc()
             break 
 
     print("Evaluation Complete. Guardrails tested successfully.")
