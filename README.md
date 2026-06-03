@@ -1,9 +1,8 @@
 
 # StayChat AI: Scalable & Grounded Hotel RAG Pipeline
 
-A production-ready Retrieval-Augmented Generation (RAG) pipeline built for the StayChat Developer Assessment.
+A Retrieval-Augmented Generation (RAG) pipeline built for the StayChat Developer Assessment.
 
-This architecture was specifically engineered with a focus on **Scalability, Optimization, and Zero-Hallucination Safety**. It bypasses heavy abstraction frameworks (like LangChain) in favor of a "bare-metal" Python implementation. By utilizing local FAISS indexing and migrating to Mistral's open-weight ecosystem, the system minimizes vendor lock-in, eliminates third-party API rate-limit bottlenecks, and operates with extremely low retrieval latency.
 
 ## Architecture & Core Features
 
